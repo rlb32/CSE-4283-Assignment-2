@@ -3,17 +3,31 @@
 
 def BMI(height, weight):
     height = float(height) * 0.025
-    print(height)
     weight = float(weight) * 0.45
     round(weight, 1)
-    print(weight)
     height = height * height
     bmi = weight/height
-    bmi = float(bmi)
+    bmi = round(bmi, 4)
+    
 
-    round(bmi, 1)
+    
 
-    return bmi
+    print("The BMI is", bmi, "so ", end='')
+  
+
+    if (bmi < 18.5):
+        out = print("Underweight")
+  
+    elif ( bmi >= 18.5 and bmi < 24.9):
+        out = print("Normal weight")
+  
+    elif ( bmi >= 24.9 and bmi < 30):
+        out = print("Overweight")
+  
+    elif ( bmi >=30):
+        out = print("Obese")
+
+    return out
   
 def feetToInches(feet, inches):
     feet = int(feet) * 12
@@ -26,7 +40,7 @@ def feetToInches(feet, inches):
     
 
   
-# calling the BMI function
+# calling the BMI function and converting height to inches
 
 print("Welcome to the BMI calculator app!")
 
@@ -41,17 +55,3 @@ weight = input("Please enter your weight in pounds: ")
 
 
 bmi = BMI(height, weight)
-print("The BMI is", bmi, "so ", end='')
-  
-# Conditions to find out BMI category
-if (bmi < 18.5):
-    print("Underweight")
-  
-elif ( bmi >= 18.5 and bmi < 24.9):
-    print("Normal weight")
-  
-elif ( bmi >= 24.9 and bmi < 30):
-    print("Overweight")
-  
-elif ( bmi >=30):
-    print("Obese")
