@@ -40,7 +40,7 @@ def feetToInches(feet, inches):
     
 
   
-# calling the BMI function and converting height to inches
+# calling the BMI function and converting height to inches and adding them up
 
 print("Welcome to the BMI calculator app!")
 
