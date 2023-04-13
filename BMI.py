@@ -1,5 +1,5 @@
-#Python program to illustrate 
-# how to calculate BMI
+
+
 
 def BMI(height, weight):
     height = float(height) * 0.025
